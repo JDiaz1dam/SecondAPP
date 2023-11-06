@@ -6,4 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/black"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cyan1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/black"
+        app:layout_constraintEnd_toStartOf="@+id/black" />
+
+    <View
+        android:id="@+id/cyan2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/black"
+        app:layout_constraintStart_toEndOf="@+id/black" />
+
+    <View
+        android:id="@+id/purpletop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/cyan1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/cyan3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/black"
+        app:layout_constraintTop_toBottomOf="@+id/black" />
+
+    <View
+        android:id="@+id/cyan4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toEndOf="@+id/black"
+        app:layout_constraintTop_toBottomOf="@+id/black" />
+
+    <View
+        android:id="@+id/purple1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toStartOf="@+id/cyan3"
+        app:layout_constraintTop_toBottomOf="@+id/cyan3" />
+
+    <View
+        android:id="@+id/purple2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/cyan3"
+        app:layout_constraintTop_toBottomOf="@+id/cyan3" />
+
+    <View
+        android:id="@+id/purple3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/cyan4"
+        app:layout_constraintTop_toBottomOf="@+id/cyan4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
